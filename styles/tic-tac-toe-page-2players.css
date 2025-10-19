@@ -3,21 +3,13 @@ font-family: monospace;
 }
 
 /* --game box-- */
-.flex-container{
+.game-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: center;   
-}
-.game-container{
-    width: 322px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: center; 
 }
 .game-container>h1 , .game-container>h2{
     color:#009688;
@@ -120,4 +112,5 @@ font-size: 50px;
   background-color: #3f51b561;
 
 }
+
 
