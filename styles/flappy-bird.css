@@ -1,0 +1,295 @@
+body{
+font-family: monospace;
+height: fit-content;
+}
+h1 ,.score{
+  height: fit-content;
+  width: fit-content;
+}
+.game-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.gamebox{
+    position: relative;
+    height: fit-content;
+}
+.board{
+    background-image: url('../flappy-bird-images/flappybirdbg.png');
+    background-size: 360px 480px ;
+    border: rgba(0, 0, 0, 0.267) 2px solid;
+    border-radius: 10px;
+}
+
+/*---start game box---*/
+.start-game-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  width: 360px;
+  height: 480px;
+  background-color:rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0.1) 2px solid;
+  border-radius: 10px;
+  color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.start-game-box h1 {
+  font-size:50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+.start-game-box button{
+    margin: 20px;
+    width: 110px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.500);
+    color: #71c5cf;
+    border: #71c5cf solid 2px;
+    border-radius: 20px;  
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.300) ; 
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.start-game-box button:active {
+  transform: scale(0.95);
+  font-size: large;
+  font-weight: bold;
+  color:white;
+  background-color: #71c5cf;
+  border: #71c5cf solid 2px;
+}
+
+/*---game over box---*/
+.game-over-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  width: 360px;
+  height: 480px;
+  background-color:rgba(0, 0, 0, 0.301);
+  border: rgba(0, 0, 0, 0.267) 2px solid;
+  border-radius: 10px;
+  color:rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.game-over-box h1 {
+  font-size:35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+.game-over-box p {
+  font-size: large;  
+  margin-bottom: 20px;
+}
+.game-over-box button{
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.500);
+    color: rgba(0, 0, 0, 0.700);
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.300) ; 
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.game-over-box button:active {
+  transform: scale(0.95);
+  font-size: large;
+  font-weight: bold;
+  color:white;
+  background-color:rgba(0, 0, 0, 0.700);
+  border: rgba(0, 0, 0, 0.700) solid 2px;
+}
+
+
+
+/* small screens
+@media (max-width: 380px) {
+  .board{
+      width: 270px;
+      height:360px ;  
+      background-image: url('../flappy-bird-images/flappybirdbg.png');
+      background-size: 270px 360px ;
+      border: rgba(0, 0, 0, 0.267) 2px solid;
+      border-radius: 10px;
+  }
+  .start-game-box {
+    width: 270px;
+    height: 360px;
+  }
+  .start-game-box h1 {
+    font-size:35px;
+  }
+  .start-game-box button{
+      width: 90px;
+      height: 40px;
+  }
+  .game-over-box {
+    width: 270px;
+    height: 360px;
+  }
+  .game-over-box h1 {
+    font-size:25px;
+  }
+  .game-over-box button{
+    width: 90px;
+    height: 40px;
+  }
+} */
+/* Smartphones */
+@media (min-width: 205px) and (max-width: 225px) {
+.game-container{
+  transform: scale(0.55);
+}
+}
+@media (min-width: 225px) and (max-width: 245px) {
+.game-container{
+  transform: scale(0.6);
+}
+}
+@media (min-width: 245px) and (max-width: 265px) {
+.game-container{
+  transform: scale(0.65);
+} 
+}
+@media (min-width: 265px) and (max-width: 285px) {
+.game-container{
+  transform: scale(0.7);
+} 
+}
+@media (min-width: 285px) and (max-width:305px) {
+.game-container{
+  transform: scale(0.75);
+}  
+}
+@media (min-width: 305px) and (max-width:325px) {
+.game-container{
+  transform: scale(0.8);
+}  
+}
+@media (min-width: 325px) and (max-width:345px) {
+.game-container{
+  transform: scale(0.85);
+}  
+}
+@media (min-width: 345px) and (max-width:365px) {
+.game-container{
+  transform: scale(0.9);
+}  
+}
+@media (min-width: 365px) and (max-width:385px) {
+.game-container{
+  transform: scale(0.95);
+}  
+}
+@media (min-width: 385px) and (max-width:405px) {
+
+}
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .board{
+      width: 450px;
+      height:480px ;  
+      background-size: 450px 480px ;
+  }
+  .start-game-box {
+    width: 450px;
+    height: 480px;
+  }
+  .start-game-box h1 {
+    font-size:50px;
+  }
+  .start-game-box button{
+      width: 100px;
+      height: 40px;
+  }
+  .game-over-box {
+      width: 450px;
+      height:480px ; 
+  }
+  .game-over-box h1 {
+    font-size:35px;
+  }
+  .game-over-box button{
+    width: 100px;
+    height: 40px;
+  }
+}
+/* Laptops */
+@media (min-width: 1025px) {
+   .board{
+      width: 450px;
+      height:520px ;  
+      background-size: 450px 520px ;
+  }
+  .start-game-box {
+      width: 450px;
+      height:520px ;
+  }
+  .start-game-box h1 {
+    font-size:50px;
+  }
+  .start-game-box button{
+      width: 100px;
+      height: 40px;
+  }
+  .game-over-box {
+      width: 450px;
+      height:520px ;
+  }
+  .game-over-box h1 {
+    font-size:35px;
+  }
+  .game-over-box button{
+    width: 100px;
+    height: 40px;
+  }
+}
+/* Desktops */ 
+@media (min-width: 1201px) and (min-height:1000px){
+  .board{
+      width: 540px;
+      height: 600px ;  
+      background-size: 540px 600px ;
+  }
+  .start-game-box {
+    width: 450px;
+    height: 600px;
+  }
+  .start-game-box h1 {
+    font-size:50px;
+  }
+  .start-game-box button{
+      width: 100px;
+      height: 40px;
+  }
+  .game-over-box {
+      width: 540px;
+      height:600px ; 
+  }
+  .game-over-box h1 {
+    font-size:35px;
+  }
+  .game-over-box button{
+    width: 100px;
+    height: 40px;
+  }
+
+}
+  
