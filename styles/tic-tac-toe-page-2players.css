@@ -5,7 +5,9 @@ font-family: monospace;
 /* --game box-- */
 .flex-container{
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center; 
 }
 .game-container{
     width: 322px;
@@ -114,4 +116,5 @@ font-size: 50px;
 }
 .O-won{
   background-color: #3f51b561;
+
 }
