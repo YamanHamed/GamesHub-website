@@ -81,7 +81,7 @@ align-items: center;
   background-color:#3f51b550;
 }
 /*----------------------*/
-
+/*
 @media (max-width:330px) and (min-width:290px) {
   .game-container{
     transform: scale(0.9);
@@ -97,7 +97,7 @@ align-items: center;
     transform: scale(0.65);
   }
 }
-
+*/
 
 
 
@@ -115,6 +115,7 @@ align-items: center;
   background-color: #3f51b561;
 
 }
+
 
 
 
