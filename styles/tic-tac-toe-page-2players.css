@@ -19,6 +19,7 @@ font-family: monospace;
     height: 50px;
     font-size: large;
     font-weight: bold;
+    background-color: white;
     color: #009688;   
     border: #009688 solid 2px;
     border-radius: 20px;  
@@ -36,8 +37,8 @@ font-family: monospace;
 /* --cells-- */
 .cell-container{
 position: relative;
-width: 322px; 
-height: 322px; 
+width: 332px; 
+height: 332px; 
 margin: 0 auto;
 display: flex;
 flex-wrap: wrap;
@@ -81,7 +82,11 @@ align-items: center;
   background-color:#3f51b550;
 }
 /*----------------------*/
-/*
+@media (max-width:340px) and (min-width:330px) {
+  .game-container{
+    transform: scale(0.9);
+  }
+}
 @media (max-width:330px) and (min-width:290px) {
   .game-container{
     transform: scale(0.9);
@@ -97,7 +102,7 @@ align-items: center;
     transform: scale(0.65);
   }
 }
-*/
+
 
 
 
@@ -115,6 +120,7 @@ align-items: center;
   background-color: #3f51b561;
 
 }
+
 
 
 
